@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LTWnet | Інтернет та телебачення</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">LTWnet</div>
+            <nav>
+                <a href="#" style = "color: #00b4ff" class="active">Головна</a>
+                <a href="sites/about.html">Про нас</a>
+                <a href="sites/tariffs.html">Тарифи</a>
+                <a href="sites/support.html">Підтримка</a>
+                <button onclick="window.location.href='sites/login.html'" class="login-btn">Login</button>
+            </nav>
+            <div class="burger" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="#" style = "color: #00b4ff" class="active">Головна</a>
+            <a href="sites/about.html">Про нас</a>
+            <a href="sites/tariffs.html">Тарифи</a>
+            <a href="sites/support.html">Підтримка</a>
+            <button onclick="window.location.href='sites/login.html'" class="login-btn">Login</button>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Швидкий та стабільний інтернет для дому і бізнесу</h1>
+            <p>Підключайся сьогодні та отримай 2 місяці у подарунок!</p>
+            <a href="sites/register.html" class="hero-btn">Підключитись</a>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="feature">
+            <h3>Інтернет для дому</h3>
+            <p>Стабільне підключення для всієї родини, без обмежень швидкості.</p>
+        </div>
+        <div class="feature">
+            <h3>Інтернет для бізнесу</h3>
+            <p>Надійні рішення для компаній будь-якого масштабу.</p>
+        </div>
+        <div class="feature">
+            <h3>Телебачення</h3>
+            <p>150+ каналів у HD-якості з улюбленими шоу та фільмами.</p>
+        </div>
+        <div class="feature">
+            <h3>Підтримка 24/7</h3>
+            <p>Ми завжди поруч, щоб допомогти нашим клієнтам.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 LTWnet. Всі права захищено.</p>
+    </footer>
+
+    <script>
+        const burger = document.getElementById('burger');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        burger.addEventListener('click', () => {
+            burger.classList.toggle('active');
+            mobileMenu.classList.toggle('open');
+        });
+    </script>
+</body>
+</html>

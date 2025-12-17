@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Підтримка | LTWnet</title>
+  <link rel="stylesheet" href="../css/support.css">
+</head>
+<body>
+  <header>
+     <div class="container">
+      <a href="../index.html" class="logo">LTWnet</a>
+      <nav id="nav-menu">
+        <a href="../index.html">Головна</a>
+        <a href="about.html">Про нас</a>
+        <a href="tariffs.html">Тарифи</a>
+        <a href="support.html" class="active">Підтримка</a>
+        <button onclick="window.location.href='login.html'" class="login-btn">Login</button>
+      </nav>
+      <div class="burger" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="mobile-menu" id="mobileMenu">
+            <a href="../index.html">Головна</a>
+            <a href="about.html" >Про нас</a>
+            <a href="tariffs.html">Тарифи</a>
+            <a href="support.html" class="active" style = "color: #00b4ff";>Підтримка</a>
+            <button onclick="window.location.href='login.html'" class="login-btn">Login</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="support-section">
+    <h1>Служба підтримки</h1>
+    <p>Опиши свою проблему або запитання — і наша команда зв’яжеться з тобою найближчим часом.  
+    Ми працюємо щодня, щоб LTWnet залишався стабільним і зручним для тебе!</p>
+
+    <form class="support-form">
+      <input type="text" placeholder="Ваше ім’я" required>
+      <input type="email" placeholder="Ваш Email" required>
+      <textarea placeholder="Опишіть проблему..." required></textarea>
+      <button type="submit">Надіслати</button>
+    </form>
+  </main>
+
+  <footer>
+    © 2025 LTWnet — Усі права захищено.
+  </footer>
+  <script>
+  const burger = document.getElementById('burger');
+  const mobileMenu = document.getElementById('mobileMenu');
+
+  burger.addEventListener('click', () => {
+    burger.classList.toggle('active');
+    mobileMenu.classList.toggle('open');
+  });
+</script>
+</body>
+</html>
