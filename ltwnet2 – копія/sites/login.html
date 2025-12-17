@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LTWnet | Вхід</title>
+    <link rel="stylesheet" href="../css/style.css">
+<style>
+    body {
+        background: var(--bg-dark);
+        color: var(--text-light);
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    .login-container {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .login-box {
+        background: rgba(11, 44, 77, 0.8);
+        padding: 40px;
+        border-radius: 15px;
+        box-shadow: 0 0 20px rgba(0,180,255,0.3);
+        width: 350px;
+        text-align: center;
+    }
+
+    .login-box h2 {
+        color: var(--accent);
+        margin-bottom: 25px;
+    }
+
+    .login-box input {
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 15px;
+        border: none;
+        border-radius: 8px;
+        outline: none;
+        font-size: 16px;
+        background-color: rgba(0,0,0,0.3);
+        color: var(--text-light);
+    }
+
+    .login-box input::placeholder {
+        color: var(--text-gray);
+    }
+
+    .register-link {
+        margin-top: 15px;
+        font-size: 14px;
+    }
+
+    .register-link a {
+        color: var(--accent);
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+    .register-link a:hover {
+        text-decoration: underline;
+    }
+</style>
+</head>
+<body>
+<header>
+    <div class="container">
+        <a href="../index.html" class="logo">LTWnet</a>
+        <nav>
+            <a href="../index.html">Головна</a>
+            <a href="about.html">Про нас</a>
+            <a href="tariffs.html">Тарифи</a>
+            <a href="support.html">Підтримка</a>
+           <button onclick="window.location.href='sites/login.html'" class="login-btn">Login</button>
+        </nav>
+    </div>
+</header>
+
+<div class="login-container">
+    <div class="login-box">
+        <h2>Увійти в акаунт</h2>
+        <form action="#" method="post">
+            <input type="email" placeholder="Email" required>
+            <input type="password" placeholder="Пароль" required>
+            <button type="submit" class="login-btn">Увійти</button>
+        </form>
+        <div class="register-link">
+            Немає акаунту? <a href="register.html">Зареєструйтесь</a>
+        </div>
+    </div>
+</div>
+
+<footer>
+    © 2025 LTWnet. Усі права захищено.
+</footer>
+</body>
+</html>

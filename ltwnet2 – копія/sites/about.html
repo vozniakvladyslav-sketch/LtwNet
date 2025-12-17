@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LTWnet | Про нас</title>
+  <link rel="stylesheet" href="../css/abouStyle.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <a href="../index.html" class="logo">LTWnet</a>
+      <nav id="nav-menu">
+        <a href="../index.html">Головна</a>
+        <a href="about.html" class="active">Про нас</a>
+        <a href="tariffs.html">Тарифи</a>
+        <a href="support.html">Підтримка</a>
+        <button onclick="window.location.href='login.html'" class="login-btn">Login</button>
+      </nav>
+      <div class="burger" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="mobile-menu" id="mobileMenu">
+            <a href="../index.html">Головна</a>
+            <a href="about.html" class="active" style = "color: #00b4ff";>Про нас</a>
+            <a href="tariffs.html">Тарифи</a>
+            <a href="#">Підтримка</a>
+            <button onclick="window.location.href='login.html'" class="login-btn">Login</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="about">
+      <h1>Про компанію LTWnet</h1>
+      <p class="intro">
+        Ми — команда, яка забезпечує швидкий і стабільний інтернет для дому та бізнесу.  
+        Наша мета — зробити якісне з’єднання доступним кожному, незалежно від місця проживання.
+      </p>
+
+      <div class="cards">
+        <div class="card">
+          <h3>Наші цінності</h3>
+          <p>Надійність, швидкість і підтримка 24/7 — це головні принципи, якими ми керуємось.</p>
+        </div>
+        <div class="card">
+          <h3>Наша історія</h3>
+          <p>LTWnet почала свою діяльність у 2018 році. За цей час ми розширили покриття на десятки міст і селищ.</p>
+        </div>
+        <div class="card">
+          <h3>Майбутнє</h3>
+          <p>Ми продовжуємо вдосконалювати технології, щоб надавати ще швидший та стабільніший інтернет.</p>
+        </div>
+        <div class="cards">
+  <div class="card">
+    <h3>Наші цінності</h3>
+    <p>Надійність, швидкість і підтримка 24/7 — це головні принципи, якими ми керуємось.</p>
+  </div>
+  <div class="card">
+    <h3>Наша історія</h3>
+    <p>LTWnet почала свою діяльність у 2018 році. За цей час ми розширили покриття на десятки міст і селищ.</p>
+  </div>
+  <div class="card">
+    <h3>Майбутнє</h3>
+    <p>Ми продовжуємо вдосконалювати технології, щоб надавати ще швидший та стабільніший інтернет.</p>
+  </div>
+  <div class="card">
+    <h3>Команда фахівців</h3>
+    <p>У нас працюють кваліфіковані техніки та оператори, які щодня допомагають клієнтам із підключенням і налаштуванням.</p>
+  </div>
+  <div class="card">
+    <h3>Сучасні технології</h3>
+    <p>Ми використовуємо оптоволоконні та бездротові лінії нового покоління, що забезпечують стабільність і низьку затримку.</p>
+  </div>
+  <div class="card">
+    <h3>Підтримка клієнтів</h3>
+    <p>Служба підтримки LTWnet працює цілодобово, щоб ти ніколи не залишився без зв’язку.</p>
+  </div>
+  <div class="card">
+    <h3>Соціальна відповідальність</h3>
+    <p>Ми допомагаємо навчальним закладам і лікарням, забезпечуючи їх безкоштовним інтернетом.</p>
+  </div>
+</div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 LTWnet. Всі права захищено.</p>
+  </footer>
+
+  <script>
+    const burger = document.getElementById('burger');
+  const mobileMenu = document.getElementById('mobileMenu');
+
+  burger.addEventListener('click', () => {
+    burger.classList.toggle('active');
+    mobileMenu.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>
