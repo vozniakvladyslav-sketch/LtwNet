@@ -165,7 +165,7 @@ footer {
   padding: 15px;
   color: var(--text-gray);
   font-size: 0.9em;
-  margin-top: 350px;
+  margin-top: 390px;
 }
 .burger {
     display: none;
@@ -247,6 +247,7 @@ footer {
         padding: 40px 8%;
     }
 }
+
 
 
 
